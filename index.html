@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>FOV Visualizer</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="fov.css">
   
 </head>
 <body>
@@ -11,6 +11,8 @@
   <h1>FOV Rectangle Visualizer</h1>
 
   <input type="file" id="videoInput" accept="video/*">
+
+  <div class="x-y">
 
   <div class="slider-container">
     <label for="xSlider">X Position:</label>
@@ -23,12 +25,13 @@
     <input type="range" id="ySlider" min="0" max="1500" value="100">
     <span id="yVal">100</span>
   </div>
+  </div>
 
   <div id="videoContainer">
     <video id="videoElement" controls></video>
     <canvas id="overlayCanvas"></canvas>
   </div>
 
-<script src="script.js"></script>
+<script src="fov.js"></script>
 </body>
 </html>
