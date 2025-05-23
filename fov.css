@@ -1,0 +1,80 @@
+:root {
+  --primary-bg: #0e1a2b;
+  --card-bg: #122840;
+  --accent: #3fa9f5;
+  --text: #ffffff;
+}
+
+body {
+  background-color: var(--primary-bg);
+  color: var(--text);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: var(--accent);
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+input[type="file"] {
+  background-color: var(--card-bg);
+  color: var(--text);
+  padding: 10px;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.slider-container {
+  background-color: var(--card-bg);
+  padding: 15px 20px;
+  margin: 10px 0;
+  border-radius: 10px;
+  width: 360px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: var(--accent);
+}
+
+.value {
+  text-align: right;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+#videoContainer {
+  position: relative;
+  width: 640px;
+  margin-top: 30px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+video {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
